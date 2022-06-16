@@ -1,20 +1,10 @@
-#include<stdio.h>
-#include<conio.h>
-
-void main()
+#include<iostream>
+using namespace std;
+int main()
 {
-	int i,j,n;
-	printf("enter a value");
-	scanf("%d",&n);
-
-	for(i=1;i<=n;++i)
-	{
-		for(j=1;j<=i;++j)
-		{
-			printf("%c",'a'+i-1);
-		}
-	
- printf("\n");
-}
-	getch();
+ char c;
+ cout << "Enter a character: ";
+ cin >> c;
+ cout << "ASCII Value of " << c << " is " << int(c);
+ return 0;
 }
